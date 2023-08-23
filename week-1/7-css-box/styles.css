@@ -1,8 +1,14 @@
 /* Try different box model properties below */
-/*   initial one: border: 1px solid #4491db; */
+.site-wrapper {
+  height: 510px;
+}
+
 .pages__page {
-  border: 1px solid red;
+  border: 1px solid #4491db;
   border-radius: 5px;
   background: #fff;
-  padding: 10px;
+}
+.country {
+  margin: 10px;
+  padding: 20px;
 }

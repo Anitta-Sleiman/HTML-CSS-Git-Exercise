@@ -1,1 +1,12 @@
-/* Write your media queries and flexbox CSS below */
+/* Default styles for smaller screens (stacked) */
+.site-header__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media query for screens wider than 480px */
+@media (min-width: 481px) {
+  .site-header__nav {
+    flex-direction: row; /* Put items side by side */
+  }
+}
