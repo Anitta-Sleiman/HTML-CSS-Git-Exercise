@@ -1,1 +1,19 @@
 /* Try different box model properties below */
+.site-header p {
+  /*all p elements with class site-header */
+  color: white;
+}
+
+.site-header > p {
+  /*For immediate child */
+  margin-bottom: 0;
+}
+
+.site-footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+.message:last-child {
+  box-shadow: 4px 4px 0 #dba944;
+}
