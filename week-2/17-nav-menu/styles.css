@@ -1,12 +1,51 @@
-/* Default styles for smaller screens (stacked) */
+/* Default styles for the header */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 .site-header__nav {
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Media query for screens wider than 480px */
+
 @media (min-width: 481px) {
   .site-header__nav {
-    flex-direction: row; /* Put items side by side */
+    flex-direction: row;
+  }
+}
+
+/* Media query for screens wider than 700px */
+
+@media (min-width: 701px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .site-header__logo {
+    flex: 1;
+  }
+
+  .site-header__nav {
+    flex: 2;
+    justify-content: center;
+  }
+
+  .site-header__checkout {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+/* Media query for screens wider than 992px */
+
+@media (min-width: 993px) {
+  .site-header__checkout {
+    order: 3;
   }
 }
