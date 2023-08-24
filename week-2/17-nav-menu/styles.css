@@ -1,51 +1,27 @@
-/* Default styles for the header */
-
-.site-header {
+.site-header__navItem {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  flex-direction: row;
 }
-
-.site-header__nav {
-  display: flex;
-  gap: 1rem;
-}
-
-/* Media query for screens wider than 480px */
 
 @media (min-width: 481px) {
-  .site-header__nav {
-    flex-direction: row;
+  .site-header__navItem {
+    display: flex;
+    flex-direction: column;
   }
 }
-
-/* Media query for screens wider than 700px */
 
 @media (min-width: 701px) {
-  .site-header {
-    flex-wrap: wrap;
-  }
-
-  .site-header__logo {
-    flex: 1;
-  }
-
-  .site-header__nav {
-    flex: 2;
-    justify-content: center;
-  }
-
+  .site-header__navItem,
+  .site-header,
   .site-header__checkout {
-    flex: 1;
-    text-align: right;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
-/* Media query for screens wider than 992px */
-
 @media (min-width: 993px) {
   .site-header__checkout {
-    order: 3;
+    margin-left: auto;
+    display: inherit;
   }
 }
